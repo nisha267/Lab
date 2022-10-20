@@ -16,20 +16,20 @@ class Create_Ac{//sub class
 	private  int accountNumber;//creating instance variables
 	private String accountName;
 	private double accountBalance;double total;
-	public  void Create_Ac(int accnumber,String accname,double accbal) {
+	public  void Create_Ac(int accnumber,String accname,double accbal) {//constructor
 		accountNumber=accnumber;
 		accountName=accname;
 		accountBalance=accbal;
 	}
-	public void set_accno(int bank)
+	public void set_accno(int bank)//setter method to show account number
 	 {
 		 accountNumber=bank; 
 	 }
-	 public void set_amount(double bank)
+	 public void set_amount(double bank)//setter method to show account balance
 	 {
 		 accountBalance=bank; 
 	 }
-	 public void set_name(String bank)
+	 public void set_name(String bank)//setter method to show account holder name
 	 {
 		 accountName=bank;
 	 }
@@ -48,11 +48,12 @@ class Create_Ac{//sub class
 			 
 		 }}
 public class BankingSystem_main {//main class
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {//main method
+		Scanner sc=new Scanner(System.in);//for input
 		int accno,accno1;String name,name1;double bal,bal1,bal2,bal3,bal4,bal5;
-		Create_Ac c1=new Create_Ac();
-		Create_Ac c=new Create_Ac();
+		Create_Ac c1=new Create_Ac();//creating object
+		Create_Ac c=new Create_Ac();//creating 2nd object
+		//taking input from user through object
 		System.out.println("Enter account Number");
 		accno=sc.nextInt();
 		System.out.println("Enter account holder name");
@@ -63,11 +64,13 @@ public class BankingSystem_main {//main class
 		bal2=sc.nextDouble();
 		System.out.println("withdrawl balance");
 		bal3=sc.nextDouble();
+		//calling required methods
 		c1.set_accno(accno);
 		c1.set_name(name);
 		c1.set_amount(bal);
 		c1.withdraw(bal2);
 		c1.setAmount(bal3);
+		//taking input from user for 2nd account holder
 		System.out.println("Enter account Number");
 		accno1=sc.nextInt();
 		System.out.println("Enter account holder name");
@@ -78,6 +81,7 @@ public class BankingSystem_main {//main class
 		bal4=sc.nextDouble();
 		System.out.println("Withdraw Balance");
 		bal5=sc.nextDouble();
+		//calling required methods
 		c.set_accno(accno1);
 		c.set_name(name1);
 		c.set_amount(bal);
