@@ -10,29 +10,29 @@ public class ProblemString1 {
 		//problem statement 1
 		System.out.println("problem statement 1");
 		
-		String s="Welcome to Java World"; //object of String buffer class
+		String s="Welcome to Java World"; //taking the string
 		System.out.println(s.charAt(5)); // prints the character present at index 5
-		System.out.println(s.compareTo("Welcome")); //compares the String' s' with "Welcome"
-		System.out.println(s.concat("Let us learn")); //prints Welcome to Java WorldLet us learn
-		System.out.println(s.indexOf("a")); //prints 12
-		System.out.println(s.replaceAll("a","e")); //prints Welcome to Jeve World
-		System.out.println(s.substring(4, 10)); //prints ome to
-		System.out.println(s.toLowerCase()); //prints the text in lowercase-->welcome to java world
+		System.out.println(s.compareTo("Welcome")); //compares the String with Welcome
+		System.out.println(s.concat("Let us learn")); // Welcome to Java World and Let us learn 
+		System.out.println(s.indexOf("a")); //printing index of a
+		System.out.println(s.replaceAll("a","e")); //java to jeve
+		System.out.println(s.substring(4, 10)); //printing substring from index 4 to 9
+		System.out.println(s.toLowerCase()); //prints the text in lowercase
 		//problem statement 2
 		System.out.println();
 		System.out.println("problem statement 2");
 		
 		StringBuffer sb=new StringBuffer("This is StringBuffer"); //
 		
-		System.out.println(sb.append("This is a sample program")); //prints-->This is StringBufferThis is a sample program
-		System.out.println(sb.insert(21,"Object")); //prints---> This is StringBufferTObjecthis is a sample program
+		System.out.println(sb.append("This is a sample program")); //prints the strings merging with This is a sample program
+		System.out.println(sb.insert(21,"Object")); //prints object in 21 position
 		System.out.println(sb.replace(14, 20, "Builder"));//replace  buffer to builder
-		System.out.println(sb.reverse()); //reverse the text--->margorp elpmas a si sihtcejbOTreffuBgnirtS si sihT
+		System.out.println(sb.reverse()); //reverse the text
 		System.out.println();
 		
 		System.out.println("problem statement 3");
 		StringTokenizer st=new StringTokenizer("C://IBM//DB2//PROGRAM//DB2COPY1.EXE");
-		while(st.hasMoreTokens())  //boolean method, it checks if there is more token available or not
+		while(st.hasMoreTokens())  //boolean method,checking if there is more token available or not
 		{
 			System.out.println();
 			System.out.print(st.nextToken("/")); //String method, it returns the next token from string tokenizer object
