@@ -33,7 +33,7 @@ public class ProblemString1 {
 		System.out.println("problem statement 3");
 		StringBuilder st=new StringBuilder("C://IBM//DB2//PROGRAM//DB2COPY1.EXE");
 		System.out.println("Drive:"+st.substring(0,3));
-		System.out.println("Folder:"+st.substring(3,6).concat("||")+st.substring(7,10).concat("||")+st.substring(11,16));
+		System.out.println("Folder:"+st.substring(3,6).concat("||")+st.substring(7,10).concat("||")+st.substring(11,18));
 		System.out.println("File:"+st.substring(20));
 		
 	}
