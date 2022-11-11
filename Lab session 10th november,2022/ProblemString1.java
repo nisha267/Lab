@@ -31,12 +31,11 @@ public class ProblemString1 {
 		System.out.println();
 		
 		System.out.println("problem statement 3");
-		StringTokenizer st=new StringTokenizer("C://IBM//DB2//PROGRAM//DB2COPY1.EXE");
-		while(st.hasMoreTokens())  //boolean method,checking if there is more token available or not
-		{
-			System.out.println();
-			System.out.print(st.nextToken("/")); //String method, it returns the next token from string tokenizer object
-		}
+		StringBuilder st=new StringBuilder("C://IBM//DB2//PROGRAM//DB2COPY1.EXE");
+		System.out.println("Drive:"+st.substring(0,3));
+		System.out.println("Folder:"+st.substring(3,6).concat("||")+st.substring(7,10).concat("||")+st.substring(11,16));
+		System.out.println("File:"+st.substring(20));
+		
 	}
 }
 
