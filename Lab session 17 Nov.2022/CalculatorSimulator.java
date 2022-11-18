@@ -1,11 +1,11 @@
 
-class TaxCalculator {
+clclass TaxCalculator {//Tax calculator class
 	String empName;
 	double empSal;
 	boolean isIndian;
 	double taxAmount;
 
-	public double CalculateTax(String empName, double empSal, boolean isIndian) {
+	public double CalculateTax(String empName, double empSal, boolean isIndian) {//method calculateTax
 		this.empName = empName;
 		this.empSal = empSal;
 		this.isIndian = isIndian;
@@ -13,19 +13,19 @@ class TaxCalculator {
 	}
 }
 
-class CountryNotValidException extends Exception { // custom exception 1
+clclass CountryNotValidException extends Exception { // custom exception 1
 	public CountryNotValidException(String s) throws CountryNotValidException {
-		throw new CountryNotValidException("The employee should be an Indian citizen for calculating tax");
+		throw new CountryNotValidException("The employee should be an Indian citizen for calculating tax");//throwing exception if The country is other than india
 	}
 }
 
-class EmployeeNameInvalidException extends Exception { // custom exception 2
+clclass EmployeeNameInvalidException extends Exception { // custom exception 2
 	public EmployeeNameInvalidException(String s) throws EmployeeNameInvalidException {
-		throw new EmployeeNameInvalidException("The employee name cannot be empty");
+		throw new EmployeeNameInvalidException("The employee name cannot be empty");//throwing exception if employee name is empty
 	}
 }
 
-class TaxNotEligibleException extends Exception { // custom exception 3
+clclass TaxNotEligibleException extends Exception { // custom exception 3
 	public TaxNotEligibleException(String s) {
 	}
 
@@ -46,10 +46,10 @@ class TaxNotEligibleException extends Exception { // custom exception 3
 	}
 }
 
-public class CalculatorSimulator {
+public class CalculatorSimulator {//main class
 	static double taxAmount;
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {//main method
 		TaxCalculator tc = new TaxCalculator();
 		CalculatorSimulator cs = new CalculatorSimulator();
 		tc.CalculateTax("Ron", 34000.0d, false);
