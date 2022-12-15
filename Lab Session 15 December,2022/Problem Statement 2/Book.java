@@ -17,23 +17,5 @@ public class Book //book class
 		this.bookId=bookId;
 		this.title=title;
 		this.author=author;
-}
-	class BookStore {//class bookstore
-	List<String> a1= new ArrayList<String>(); //creating list
-		void addBook(Book b) {//method 1
-			a1.addAll(Book); // book details
-		}
-		void searchByTitle(String title)  {//method 2
-			if (a1.contains(title)) {
-				System.out.println(a1.containsAll(Book));
-			} else 
-				System.out.println("Book NOT found");
-		}
-		void searchByAuthor(String author) {//method author name
-			if(a1.contains(author)) {
-				System.out.println(a1.containsAll(Book));
-			}else 
-				System.out.println("Book Not Found");
-		}
-	}
-}
+}}
+	
