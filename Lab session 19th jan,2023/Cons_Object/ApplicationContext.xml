@@ -9,16 +9,17 @@
  
  
  
- <bean id="lab1" class="com.Spring.entity.Lab_collection">
- <constructor-arg  value="Rita"/>
- <constructor-arg  value="11"/>
-  <constructor-arg>
-  <list>
-  <value>56</value>
-  <value>76</value>
-  <value>87</value>
-  </list>
-  </constructor-arg>  
+<bean id="ob" class="com.Spring.entity.Lab_Object">
+ <constructor-arg  value="Nisha"/>
+ <constructor-arg  value="Asansol"/>
+ <constructor-arg> <ref bean="ob2"/></constructor-arg>
  </bean>
- 
+ <bean id="ob2" class="com.Spring.entity.Lab_Object2">
+ <constructor-arg  value="104532167"/>
+ <constructor-arg  value="AF432156T45"/>
+  <constructor-arg  value="Asansol"/>
+ </bean>
+
+</beans>
+  
  
