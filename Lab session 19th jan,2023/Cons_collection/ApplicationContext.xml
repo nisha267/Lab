@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/data/jpa
+ https://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+ 
+ <bean id="X" class="com.Spring.entity.Student">
+ <constructor-arg name="id" value="101"/>
+ <constructor-arg name="sname" value="Nisha"/>
+ <constructor-arg name="email" value="nisha@gmail.com"/>
+ <constructor-arg name="phone" value="8927974283"/>
+ </bean>
+ 
+ <bean id="Y" class="com.Spring.entity.Person">
+ <property name="name" value="Nisha"/> 
+ 
+ </bean>
+  <bean id="Z" class="com.Spring.entity.Employee">
+ <constructor-arg type="String" value="Nisha"/>
+ </bean>
+ <bean id="W" class="com.Spring.entity.Employee">
+ <constructor-arg type="int" value="10"/>
+ </bean>
+ <bean id="b" class="com.Spring.entity.Employee">
+ <constructor-arg type="int" value="10"/>
+ <constructor-arg type="String" value="Nisha"/>
+ </bean>
+ 
+ <bean id="add" class="com.Spring.entity.Address">
+ <constructor-arg  value="Kolkata"/>
+ <constructor-arg  value="WB"/>
+  <constructor-arg  value="India"/>
+ </bean>
+ <bean id="emp" class="com.Spring.entity.Emp1">
+ <constructor-arg  value="10"/>
+ <constructor-arg  value="Nisha"/>
+  <constructor-arg> <ref bean="add"/></constructor-arg>
+ </bean>
+ <bean id="mcq" class="com.Spring.entity.Mcq">
+ <constructor-arg  value="010"/>
+ <constructor-arg  value="Define Spring"/>
+  <constructor-arg>
+  <list>
+  <value>spring is a framework</value>
+  <value>spring is a collection</value>
+  <value>spring is a list</value>
+  </list>
+  </constructor-arg>  
+ </bean>
+ 
+ <bean id="lab1" class="com.Spring.entity.Lab_collection">
+ <constructor-arg  value="Rita"/>
+ <constructor-arg  value="11"/>
+  <constructor-arg>
+  <list>
+  <value>56</value>
+  <value>76</value>
+  <value>87</value>
+  </list>
+  </constructor-arg>  
+ </bean>
+ 
+ <bean id="ob" class="com.Spring.entity.Lab_Object">
+ <constructor-arg  value="Nisha"/>
+ <constructor-arg  value="Asansol"/>
+ <constructor-arg> <ref bean="ob2"/></constructor-arg>
+ </bean>
+ <bean id="ob2" class="com.Spring.entity.Lab_Object2">
+ <constructor-arg  value="104532167"/>
+ <constructor-arg  value="AF432156T45"/>
+  <constructor-arg  value="Asansol"/>
+ </bean>
+
+ 
+  <bean id="value" class="com.Spring.entity.Lab_value">
+ <constructor-arg type="String" value="Bag"/>
+ </bean>
+ <bean id="value1" class="com.Spring.entity.Lab_value">
+ <constructor-arg type="int" value="101213"/>
+ </bean>
+ <bean id="value2" class="com.Spring.entity.Lab_value">
+ <constructor-arg type="int" value="101213"/>
+ <constructor-arg type="String" value="Bag"/>
+ </bean>
+ 
+ </beans>
