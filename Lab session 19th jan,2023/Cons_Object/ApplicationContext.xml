@@ -21,27 +21,4 @@
   </constructor-arg>  
  </bean>
  
- <bean id="ob" class="com.Spring.entity.Lab_Object">
- <constructor-arg  value="Nisha"/>
- <constructor-arg  value="Asansol"/>
- <constructor-arg> <ref bean="ob2"/></constructor-arg>
- </bean>
- <bean id="ob2" class="com.Spring.entity.Lab_Object2">
- <constructor-arg  value="104532167"/>
- <constructor-arg  value="AF432156T45"/>
-  <constructor-arg  value="Asansol"/>
- </bean>
-
  
-  <bean id="value" class="com.Spring.entity.Lab_value">
- <constructor-arg type="String" value="Bag"/>
- </bean>
- <bean id="value1" class="com.Spring.entity.Lab_value">
- <constructor-arg type="int" value="101213"/>
- </bean>
- <bean id="value2" class="com.Spring.entity.Lab_value">
- <constructor-arg type="int" value="101213"/>
- <constructor-arg type="String" value="Bag"/>
- </bean>
- 
- </beans>
